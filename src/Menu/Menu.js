@@ -5,7 +5,11 @@ export function Menu(){
         <>
         <nav class="navbar navbar-expand-lg navbar-dark menu fixed-top">
             <div class="container-fluid">
-                <Link class="navbar-brand" to="/"> </Link> 
+                <Link class="navbar-brand" to="/">
+                <div class="col-4" > 
+                    <img src=''></img>
+                </div>    
+                </Link> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>

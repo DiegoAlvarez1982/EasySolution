@@ -5,18 +5,18 @@ export function Servicios(){
             <section class="container-fluid my-5">
                 <div class="row text-center justify-content-around">
                 <div class="col-12 col-md-3 fondo">
-                        <h2>Packs y Sets</h2>
+                        <h2>PACKS Y SETS</h2>
                     
                     </div>
                    
                     
 
                     <div class="col-12 col-md-3 fondo">
-                        <h2>Ediciones limitadas</h2>
+                        <h2>EDICIONES LIMITADAS</h2>
                         
                     </div>
                     <div class="col-12 col-md-3 fondo">
-                        <h2>Personaliza tu botella</h2>
+                        <h2>PERZONALIZA TU BOTELLA</h2>
                       
                     </div>
                 </div>

@@ -7,7 +7,7 @@ export function Menu(){
             <div class="container-fluid">
                 <Link class="navbar-brand" to="/">
                 <div class="col-4" > 
-                    <img src=''></img>
+                    <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/Imagen2.png?alt=media&token=e324d9e8-cadb-48eb-82f0-a5d0c9d62459'></img>
                 </div>    
                 </Link> 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +20,10 @@ export function Menu(){
                     </li>
                     <li class="nav-item">
                     <Link class="nav-link" to="/administrar">Agregar Productos</Link>
-                    </li>                    
+                    </li>  
+                    <li class="nav-item">
+                    <Link class="nav-link" to="/productos">Productos</Link>
+                    </li>                  
                 </ul>
                 </div>
             </div>

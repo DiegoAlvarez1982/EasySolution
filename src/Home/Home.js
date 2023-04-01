@@ -2,6 +2,7 @@ import './Home.css'
 import { AcercaDe } from '../AcercaDe/AcercaDe'
 import { Servicios } from '../Servicios/Servicios'
 
+
 export function Home(){
     return(
         <>
@@ -13,6 +14,7 @@ export function Home(){
             </section>    
             <AcercaDe></AcercaDe>  
             <Servicios></Servicios>
+           
         
         </>
     )

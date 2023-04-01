@@ -1,4 +1,15 @@
+import './Tienda.css'
 export function Tienda(){
+
+    function cambiarFoto(evento){
+        evento.preventDefault()
+        evento.target.classList.remove("sombra")
+    }
+
+    function cambiarFoto2(evento){
+        evento.preventDefault()
+        evento.target.classList.add("sombra")
+    }
 
     let productos = [
         {
@@ -75,22 +86,27 @@ export function Tienda(){
         }
     ]
 
+
+
     return(
         <>
             
             
             <br></br>
             <br></br>
-            <div class="row row-cols-1 row-cols-md-3 g-3 my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
                 {
                     productos.map(function(producto){
                         return(
-                            <div class="col">
-                                <div class="card shadow h-100">
-                                    <img src={producto.foto} alt="foto" class="img-fluid"/>
+                            <div class="col zoom" >
+                                <div class="card shadow h-100 p-2">
+                                    <img src={producto.foto} alt="foto" class="img-fluid sombra " 
+                                        onMouseOver={cambiarFoto}
+                                        onMouseLeave={cambiarFoto2}
+                                    />
                                     <h2 class="fw-bold text-center ">{producto.nombre}</h2>
                                     <p class="text-center fw-bold">{producto.descripción}</p>
-                                    <h3 class="text-success text-center" >$ {producto.precio} COP</h3>
+                                    <h3 class="text-warning text-center" >$ {producto.precio} COP</h3>
                                     
                                     
                                 </div>

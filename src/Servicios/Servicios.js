@@ -36,8 +36,14 @@ export function Servicios(){
                     </div>
                     <div class="col-12 col-md-3 fondo">
                          <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/perso.webp?alt=media&token=c6f6ef5e-4d31-419e-ba8c-a1f03566fd16' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>
+                        <p>Los regalos personalizados son una de las mejores opciones para hacer un regalo de cumpleaños, un detalle de aniversario o para decirle a alguien cuanto te importa. Su éxito se explica por ser regalos baratos y prácticos. Son detalles mágicos en los que podemos expresar mucho sin apenas decir nada.
+
+                        Si quieres sorprender con un detalle excepcional y entrar en la historia de los regalos personalizados. Visita nuestro catálogo de regalos personalizados</p>  
                     </div>
                 </div>
+                </section>
+                <section class="fondo2">
+
                 </section>
             
         </>

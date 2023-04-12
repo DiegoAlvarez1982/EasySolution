@@ -1,5 +1,19 @@
 .fondo{
     background-color: sienna;
     color: white;
+
     
+    
+}
+
+.fondo2{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/banner3.jpg?alt=media&token=45aa2c05-c3f6-4059-8dfc-0df953d30855");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/banner4.webp?alt=media&token=c266cafc-c55c-4930-bf77-50d75dac1842");
+    background-position: top center;
+    background-size: cover;
+    padding: 25%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-attachment: fixed;
 }

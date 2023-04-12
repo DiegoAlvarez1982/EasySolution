@@ -1,4 +1,6 @@
 import './Tienda.css'
+import { useNavigate } from 'react-router-dom'
+
 export function Tienda(){
 
     function cambiarFoto(evento){
@@ -9,6 +11,16 @@ export function Tienda(){
     function cambiarFoto2(evento){
         evento.preventDefault()
         evento.target.classList.add("sombra")
+    }
+    
+    let navegador=useNavigate()
+    function pasarInformacion(producto){
+        navegador('/comprar',{
+            state:{producto}
+        }
+            
+            
+        )        
     }
 
     let productos = [
@@ -86,21 +98,19 @@ export function Tienda(){
         }
     ]
 
-
-
     return(
-        <>
-            
-            
+        <>     
             <br></br>
             <br></br>
             <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
                 {
                     productos.map(function(producto){
                         return(
-                            <div class="col zoom" >
+                            <div class="col zoom" onClick={function(){pasarInformacion(producto)}} >
                                 <div class="card shadow h-100 p-2">
-                                    <img src={producto.foto} alt="foto" class="img-fluid sombra " 
+                                    <img src={producto.foto} 
+                                        alt="foto" 
+                                        class="img-fluid sombra " 
                                         onMouseOver={cambiarFoto}
                                         onMouseLeave={cambiarFoto2}
                                     />

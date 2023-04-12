@@ -14,6 +14,7 @@ export function Router(){
         <header>
             <Menu></Menu>
         </header>
+        
         <Routes>
             <Route path="/productos" element={<Tienda/>} />
             <Route path="/administrar" element={<Administrador/>} />

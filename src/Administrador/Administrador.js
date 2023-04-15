@@ -1,4 +1,5 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { registrarProductoEnBd } from "../services/agregarProducto"
 
 export function Administrador() {
 
@@ -22,11 +23,11 @@ export function Administrador() {
         evento.preventDefault()
         let datosProducto={
             "nombre":nombre,
-            "foto":foto,
             "cantidad":cantidad,
+            "foto":foto,
             "descripcion":descripcion,
-            "precio":precio,
-            "clasificacion":clasificacion,
+            "precio unitario":precio,
+            /*"clasificacion":clasificacion,
             "marca":marca,
             "presentacion":presentacion,
             "peso":peso,
@@ -35,9 +36,13 @@ export function Administrador() {
             "iva":iva,
             "descuento":descuento,
             "fechaingreso":fechaingreso,
-            "fechavencimiento":fechavencimiento
+            "fechavencimiento":fechavencimiento*/
         }
         console.log(datosProducto);
+        registrarProductoEnBd(datosProducto)
+        .then(function(respuesta){
+            console.log(respuesta)
+        })
     }
 
 
@@ -285,8 +290,7 @@ export function Administrador() {
                                 </div>
                             </div>
                             <br></br>
-                            <button type="submit" class="btn btn-outline-success w-50 btn-center ">Enviar</button>
-                            <button type="submit" class="btn btn-outline-primary w-50 btn-center">Limpiar</button>
+                            <button type="submit" class="btn btn-outline-success w-100 btn-center ">Enviar</button>
                                         
                         </form>
                     </div>

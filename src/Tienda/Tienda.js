@@ -1,7 +1,12 @@
 import './Tienda.css'
 import { useNavigate } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { consultarProductos } from '../services/buscarProducto'
 
 export function Tienda(){
+
+    const[productosTienda,setProductosTienda]=useState("")
+    const[estadodeCarga, setEstadodeCarga]=useState(true)
 
     function cambiarFoto(evento){
         evento.preventDefault()
@@ -23,7 +28,16 @@ export function Tienda(){
         )        
     }
 
-    let productos = [
+    useEffect(function(){
+        consultarProductos()
+        .then(function(respuesta){
+            setEstadodeCarga(false)
+            setProductosTienda(respuesta)
+        })
+    },[])
+
+
+    /*let productos = [
         {
             nombre:"Vino",
             precio:10000,
@@ -96,37 +110,47 @@ export function Tienda(){
             descripción:"El champagne por la habitual es la combinación de distintos tipos de uva.",
             foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/champ.png?alt=media&token=d7775bf9-6b19-4c7b-bb40-b884d306f96d"
         }
-    ]
+    ]*/
+
+    if(estadodeCarga==true){
+        return(
+            <>
+                <h1>Estamos cargando...</h1>
+            </>
+        )
+    }else{
 
     return(
-        <>     
-            <br></br>
-            <br></br>
-            <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
-                {
-                    productos.map(function(producto){
-                        return(
-                            <div class="col zoom" onClick={function(){pasarInformacion(producto)}} >
-                                <div class="card shadow h-100 p-2">
-                                    <img src={producto.foto} 
-                                        alt="foto" 
-                                        class="img-fluid sombra " 
-                                        onMouseOver={cambiarFoto}
-                                        onMouseLeave={cambiarFoto2}
-                                    />
-                                    <h2 class="fw-bold text-center ">{producto.nombre}</h2>
-                                    <p class="text-center fw-bold">{producto.descripción}</p>
-                                    <h3 class="text-warning text-center" >$ {producto.precio} COP</h3>
-                                    
-                                    
+            <>     
+                <br></br>
+                <br></br>
+                <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
+                    {
+                        productosTienda.map(function(producto){
+                            return(
+                                <div class="col zoom" onClick={function(){pasarInformacion(producto)}} >
+                                    <div class="card shadow h-100 p-2">
+                                        <img src={producto.foto} 
+                                            alt="foto" 
+                                            class="img-fluid sombra " 
+                                            onMouseOver={cambiarFoto}
+                                            onMouseLeave={cambiarFoto2}
+                                        />
+                                        <h2 class="fw-bold text-center ">{producto.nombre}</h2>
+                                        <p class="text-center fw-bold">{producto.descripción}</p>
+                                        <h3 class="text-warning text-center" >$ {producto.precio} COP</h3>
+                                        
+                                        
+                                    </div>
                                 </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>                     
-        
-        </>
-    )
+                            )
+                        })
+                    }
+                </div>                     
+            
+            </>
+        )
+    }
+
 
 }

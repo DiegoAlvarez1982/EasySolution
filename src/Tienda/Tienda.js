@@ -109,6 +109,54 @@ export function Tienda(){
             precio:55000,
             descripción:"El champagne por la habitual es la combinación de distintos tipos de uva.",
             foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/champ.png?alt=media&token=d7775bf9-6b19-4c7b-bb40-b884d306f96d"
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
+        },
+        {
+            nombre: "",
+            precio:55000,
+            descripción:"",
+            foto:""
         }
     ]*/
 

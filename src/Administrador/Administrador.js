@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { registrarProductoEnBd } from "../services/agregarProducto"
+import Swal from "sweetalert2"
 
 export function Administrador() {
 
@@ -27,7 +28,7 @@ export function Administrador() {
             "foto":foto,
             "descripcion":descripcion,
             "precio unitario":precio,
-            /*"clasificacion":clasificacion,
+            "clasificacion":clasificacion,
             "marca":marca,
             "presentacion":presentacion,
             "peso":peso,
@@ -36,12 +37,23 @@ export function Administrador() {
             "iva":iva,
             "descuento":descuento,
             "fechaingreso":fechaingreso,
-            "fechavencimiento":fechavencimiento*/
+            "fechavencimiento":fechavencimiento
         }
         console.log(datosProducto);
         registrarProductoEnBd(datosProducto)
         .then(function(respuesta){
-            console.log(respuesta)
+            Swal.fire(
+                'Éxito en el registro',
+                'Puedes realizar el siguiente registro',
+            )
+        })
+        .catch(function(error){
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'No pudimos realiar el registro',                   
+                })
+            
         })
     }
 

@@ -31,8 +31,8 @@ export function Servicios(){
                     </div>
                     
 
-                    <div class="col-12 col-md-3 fondo">
-                        <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/ediclimitada.webp?alt=media&token=43b9c98c-3f42-43d7-b4ad-7140d39949b7' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>
+                    <div class="col-12 col-md-3 fondo align-self-center">
+                        <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/ediclimitada.webp?alt=media&token=43b9c98c-3f42-43d7-b4ad-7140d39949b7' alt="foto" class=" col-8 my-3 w-100 img-fluid h-75 align-self-center"></img>
                     </div>
                     <div class="col-12 col-md-3 fondo">
                          <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/perso.webp?alt=media&token=c6f6ef5e-4d31-419e-ba8c-a1f03566fd16' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>

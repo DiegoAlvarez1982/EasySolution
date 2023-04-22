@@ -1,3 +1,5 @@
+import './Desarrolladores.css'
+
 export function Desarrolladores() {
 
     return (
@@ -9,10 +11,10 @@ export function Desarrolladores() {
             <h2 class="text-center">DESARROLLADORES, CREADORES Y FUNDADORES </h2>
 
             <section class="container-fluid my-3  ">
-                <div class="row text-center justify-content-around">
+                <div class="row text-center justify-content-around ">
                     <h2>Sanuel Hernandez</h2>
-                    <p>Tecnico Laboral en Desarrollo de Software</p>
-                    <div class="col-12 col-md-4 fs-1 ms-2 " >
+                    <h6>Tecnico Laboral en Desarrollo de Software</h6>
+                    <div class="col-12 col-md-4 fs-1 ms-2 fondo" >
                         <img src="https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/logo.jpg?alt=media&token=dc38eaef-1559-4b21-aff5-3276885b0740"
                             alt="foto"
                             class=" col-8 my-3 w-100 img-fluid"></img>
@@ -38,8 +40,8 @@ export function Desarrolladores() {
 
                 <div class="row text-center justify-content-around">
                     <h2>Alejandra Florez</h2>
-                    <p>Tecnico Laboral en Desarrollo de Software</p>
-                    <div class="col-12 col-md-3 fs-1 ms-2">
+                    <h6>Tecnico Laboral en Desarrollo de Software</h6>
+                    <div class="col-12 col-md-3 fs-1 ms-2 fondo">
                         <img src="https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/IMG_20190810_110415205.jpg?alt=media&token=d376c88c-c875-4f75-b1f3-324a048408e1"
                             alt="foto"
                             class=" col-8 my-3 w-100 img-fluid"></img>

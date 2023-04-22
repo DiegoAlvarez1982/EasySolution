@@ -173,6 +173,7 @@ export function Tienda(){
                 <br></br>
                 <br></br>
                 <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
+                    {console.log(productosTienda)}
                     {
                         productosTienda.map(function(producto){
                             return(
@@ -185,8 +186,8 @@ export function Tienda(){
                                             onMouseLeave={cambiarFoto2}
                                         />
                                         <h2 class="fw-bold text-center ">{producto.nombre}</h2>
-                                        <p class="text-center fw-bold">{producto.descripción}</p>
-                                        <h3 class="text-warning text-center" >$ {producto.precio} COP</h3>
+                                        <p class="text-center fw-bold">{producto.descripcion}</p>
+                                        <h3 class="text-warning text-center" >$ {producto.precioUnitario} COP</h3>
                                         
                                         
                                     </div>

@@ -27,8 +27,8 @@ export function Administrador() {
             "cantidad":cantidad,
             "foto":foto,
             "descripcion":descripcion,
-            "precio unitario":precio,
-            "clasificacion":clasificacion,
+            "precioUnitario":precio,
+            /*"clasificacion":clasificacion,
             "marca":marca,
             "presentacion":presentacion,
             "peso":peso,
@@ -37,7 +37,7 @@ export function Administrador() {
             "iva":iva,
             "descuento":descuento,
             "fechaingreso":fechaingreso,
-            "fechavencimiento":fechavencimiento
+            "fechavencimiento":fechavencimiento*/
         }
         console.log(datosProducto);
         registrarProductoEnBd(datosProducto)

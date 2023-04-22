@@ -23,7 +23,10 @@ export function Menu(){
                     </li>  
                     <li class="nav-item">
                     <Link class="nav-link" to="/productos">Productos</Link>
-                    </li>                  
+                    </li>   
+                    <li class="nav-item">
+                    <Link class="nav-link" to="/Desarrolladores">Acerca De</Link>
+                    </li>               
                 </ul>
                 </div>
             </div>

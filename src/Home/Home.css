@@ -1,5 +1,5 @@
 .banner{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/banner5.jpg?alt=media&token=398f3cd5-e229-42c1-ba5c-ed432cb2dd72");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/R.jpg?alt=media&token=652f55a3-77cc-4aab-8780-60f61c222c1f");
     background-position: top center;
     background-size: cover;
     padding: 25%;
@@ -18,6 +18,6 @@
     background-color: black;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     z-index: -1;
 }

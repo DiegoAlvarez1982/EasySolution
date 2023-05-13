@@ -3,20 +3,20 @@ export function Servicios(){
     return(
         <>
             <section class="container-fluid my-5">
-                <div class="row text-center justify-content-around">
-                <div class="col-12 col-md-3 fondo">
-                        <h2>PACKS Y SETS</h2>
+                <div class="row text-center justify-content-around ">
+                <div class="col-12 col-md-3  fondo">
+                        <h5>SERVICIOS DE INSTALACIÓN</h5>
                     
                     </div>
                    
                     
 
                     <div class="col-12 col-md-3 fondo">
-                        <h2>EDICIONES LIMITADAS</h2>
+                    <h5>FERRETERIAS CERCANAS</h5>
                         
                     </div>
                     <div class="col-12 col-md-3 fondo">
-                        <h2>PERZONALIZA TU BOTELLA</h2>
+                    <h5>HAZLO TU MISMO</h5>
                       
                     </div>
                 </div>
@@ -26,19 +26,24 @@ export function Servicios(){
                     
                     <div class="col-12 col-md-3 fondo">
                         
-                        <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/packs1.webp?alt=media&token=713720e4-aa99-4c68-b7fa-74038b6da850' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>  
-                        <p>Así que si buscas un regalo con licor práctico, sofisticado y lleno de significado ¡estás en el lugar correcto! En The Bar encontrarás la opción perfecta para sorprender a tus amigos, familiares y seres queridos en cualquier ocasión especial. Aquí podrás encontrar una amplia variedad de bebidas alcohólicas cuidadosamente seleccionadas para sorprender y complacer, ofrecemos licores premium de las mejores marcas</p>
+                        <img src='https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/6.jpg?alt=media&token=90b64519-4d90-4e99-a35b-facd160c4696' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>  
+                        <p>Enceuntra la mejor empresa según el servicio de instalación a tu necesidad, con técnicos expertos seleccionados y capacitados, trabajos 100% garantizados, contamos con la mejor pagina de busqueda y tendrá un contacto en menos de 24 horas para programar el servicio y hacer las recomendaciones necesaria para realizar el trabajo completo en el tiempo justo.</p>
                     </div>
                     
 
-                    <div class="col-12 col-md-3 fondo align-self-center">
-                        <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/ediclimitada.webp?alt=media&token=43b9c98c-3f42-43d7-b4ad-7140d39949b7' alt="foto" class=" col-8 my-3 w-100 img-fluid h-75 align-self-center"></img>
+                    <div class="col-12 col-md-3 fondo ">
+                        <img src='https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/14.jpg?alt=media&token=da923a5f-aa83-47d4-b375-c145d6408e36' alt="foto" class=" col-8 my-3 w-100 img-fluid"
+                        ></img>
+                        <p>Aquí encontraras todas las ferreterias disponibles para que puedas elegir a tu gusto y comparar los mejores precios, es la mejor opción para tener sus productos a tiempo o visitar el lugar más cercano.
+                        <br></br>
+                        <br></br>
+                            Encontraras un mapa para que te guies mejor.
+                        </p>
                     </div>
                     <div class="col-12 col-md-3 fondo">
-                         <img src='https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/perso.webp?alt=media&token=c6f6ef5e-4d31-419e-ba8c-a1f03566fd16' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>
-                        <p>Los regalos personalizados son una de las mejores opciones para hacer un regalo de cumpleaños, un detalle de aniversario o para decirle a alguien cuanto te importa. Su éxito se explica por ser regalos baratos y prácticos. Son detalles mágicos en los que podemos expresar mucho sin apenas decir nada.
-
-                        Si quieres sorprender con un detalle excepcional y entrar en la historia de los regalos personalizados. Visita nuestro catálogo de regalos personalizados</p>  
+                         <img src='https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/3.jpg?alt=media&token=60be133e-d6ed-43b1-833b-1147cf84fd9b' alt="foto" class=" col-8 my-3 w-100 img-fluid"></img>
+                        <p>¡Hágalo Usted Mismo! 💙 Aquí encontrarás infinitas ideas, tutoriales y consejos para renovar, mejorar tus espacios y realizar todo tipo de reparaciones. Suscríbete a nuestro canal y disfruta cada semana de videos para inspirarte y aventurarte con un nuevo proyecto.
+                        Deja volar tú imaginación y crearas espacios espectaculares.</p>  
                     </div>
                 </div>
                 </section>

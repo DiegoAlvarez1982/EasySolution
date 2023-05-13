@@ -8,8 +8,8 @@ export function Home(){
         <>
             <section>
                 <div class="banner">
-                    <h2>TRAGOS DE AUTOR!</h2>
-                    <h3>Licores Importados...</h3>
+                <h1>ESTAMOS PARA AYUDARTE!</h1>
+                    <h2>Aquí encontraras la mejor opción...</h2>
                 </div>
             </section>    
             <AcercaDe></AcercaDe>  

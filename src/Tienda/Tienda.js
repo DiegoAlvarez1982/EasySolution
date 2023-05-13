@@ -1,12 +1,7 @@
 import './Tienda.css'
 import { useNavigate } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import { consultarProductos } from '../services/buscarProducto'
 
 export function Tienda(){
-
-    const[productosTienda,setProductosTienda]=useState("")
-    const[estadodeCarga, setEstadodeCarga]=useState(true)
 
     function cambiarFoto(evento){
         evento.preventDefault()
@@ -28,178 +23,89 @@ export function Tienda(){
         )        
     }
 
-    useEffect(function(){
-        consultarProductos()
-        .then(function(respuesta){
-            setEstadodeCarga(false)
-            setProductosTienda(respuesta)
-        })
-    },[])
-
-
-    /*let productos = [
+    let productos = [
         {
-            nombre:"Vino",
-            precio:10000,
-            descripción:"Vino del mejor viñero",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/vinos.png?alt=media&token=eeffa2b9-66bf-4042-8a11-38772ccf7cce"
+            nombre:"Servicios de Instalación",
+            descripción:"Plomeria y Electricidad en general",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/instal1.jpg?alt=media&token=27a92680-ef2f-4a8e-8d4b-2b7e32db2472"
         },
         {
-            nombre: "Whisky",
-            precio:20000,
-            descripción:"Whisky el mejor regalo",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/whisky.png?alt=media&token=1794e238-09e1-4c64-abe0-7a6e2e40ed57"
+            nombre: "Servicios de Instalación",
+            descripción:"Instalacion de muebles",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/instal2.jpg?alt=media&token=87d954c3-1910-4f11-8ce8-8a3c545244b6"
         },
         {
-            nombre: "Vodka",
-            precio:30000,
-            descripción:"Vodka el original",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/vodka.png?alt=media&token=d371913c-6d40-4889-a0b2-bfeae6e0f642"
+            nombre: "Servicios de Instalación",
+            descripción:"Reparacion y mantenimientos de aparatos electricos",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/instal3.jpg?alt=media&token=93b0abd6-1701-4101-9eb5-2f6d2f315e4a"
         },
         {
-            nombre: "Cerveza",
-            precio:5000,
-            descripción:"Cerveza el parche de los friends",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/cervezA.png?alt=media&token=c9da61e7-bca8-4be4-bb53-ae30259c0033"
+            nombre: "Encuentra la ferreteria más cercana ",
+            
+            descripción:"Utiliza nuestra App",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/FERR1.jpg?alt=media&token=d058ba44-43a2-4cbb-bed1-a72dc09e3502"
         },
         {
-            nombre: "Tequila",
-            precio:95000,
-            descripción:"Tequila una tarde divertida",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/tequila.png?alt=media&token=9d1ff4fa-edbe-4bc0-9340-aef2111d4332"
+            nombre: "Encuentra la pieza que necesitas",
+            
+            descripción:"Encuentra las mejores tiendas.",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/1.jpg?alt=media&token=63cde252-7e5d-4e02-9dd4-86e663dc6fe7"
         },
         {
-            nombre: "Ron",
-            precio:78000,
-            descripción:"Ron lo mejor para la diversión",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/ron.png?alt=media&token=f1fd1635-253d-44d0-9489-08caa6147a8e"
+            nombre: "Encuentra una facil solucion",
+            
+            descripción:"Cuida tus espacios.",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/FERR2.jpg?alt=media&token=2bb5c11e-2ddf-4c21-ac5c-5e23f7da2751"
         },
         {
-            nombre: "Jagermeister",
-            precio:81000,
-            descripción:" Jagermeister, un licor de hierbas producido en la ciudad alemana de Wolfenbütte",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/jag.png?alt=media&token=3ebb73dc-7073-4b21-b701-f9f9b2d1566b"
+            nombre: "Hazlo tu mismo",
+            
+            descripción:"Mira y Aprende como hacerlo ",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/3.jpg?alt=media&token=60be133e-d6ed-43b1-833b-1147cf84fd9b"
         },
         {
-            nombre: "Brandy",
-            precio:35000,
-            descripción:"El mejor Brandy lo hacen en Filipinas y a todos les gusta mucho.",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/brandy.png?alt=media&token=e2f6d3b0-12dd-4c4c-ad29-71f6514b9b81"
+            nombre: "Hazlo tu mismo",
+            
+            descripción:"Mira nuestros recursos",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/HAZLO2.jpg?alt=media&token=f832d14d-a374-416b-93b9-c9c3c996409a"
         },
         {
-            nombre: "Soju",
-            precio:56000,
-            descripción:"Soju, una bebida clara que es fabricada en Corea y muy popular por allá.",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/soju.png?alt=media&token=aa3a8f56-0433-4ffb-93f9-746e82e8476c"
-        },
-        {
-            nombre: "Sake",
-            precio:64000,
-            descripción:"El sake, bebida alcohólica japonesa, obtenida por fermentación del arroz",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/sake2.png?alt=media&token=4e51db7b-47d1-444e-b2f8-96f4fc287eae"
-        },
-        {
-            nombre: "Crema de Whisky",
-            precio:110000,
-            descripción:" La crema de Whisky irlandesa puede beberse sola con hielo o como parte de un cóctel.",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/crema%20de%20w.png?alt=media&token=f466ab4f-7f74-4fe0-9f4d-6016e85ef0e9"
-        },
-        {
-            nombre: "Champagne",
-            precio:55000,
-            descripción:"El champagne por la habitual es la combinación de distintos tipos de uva.",
-            foto:"https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/champ.png?alt=media&token=d7775bf9-6b19-4c7b-bb40-b884d306f96d"
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
-        },
-        {
-            nombre: "",
-            precio:55000,
-            descripción:"",
-            foto:""
+            nombre: "Hazlo tu mismo",
+            
+            descripción:" Manos a la obra. ",
+            foto:"https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/AHZLO1.jpg?alt=media&token=5f0e798d-1957-4337-8e21-7e7a0cb503a7"
         }
-    ]*/
-
-    if(estadodeCarga==true){
-        return(
-            <>
-                <h1>Estamos cargando...</h1>
-            </>
-        )
-    }else{
+    ]
 
     return(
-            <>     
-                <br></br>
-                <br></br>
-                <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
-                    {console.log(productosTienda)}
-                    {
-                        productosTienda.map(function(producto){
-                            return(
-                                <div class="col zoom" onClick={function(){pasarInformacion(producto)}} >
-                                    <div class="card shadow h-100 p-2">
-                                        <img src={producto.foto} 
-                                            alt="foto" 
-                                            class="img-fluid sombra " 
-                                            onMouseOver={cambiarFoto}
-                                            onMouseLeave={cambiarFoto2}
-                                        />
-                                        <h2 class="fw-bold text-center ">{producto.nombre}</h2>
-                                        <p class="text-center fw-bold">{producto.descripcion}</p>
-                                        <h3 class="text-warning text-center" >$ {producto.precioUnitario} COP</h3>
-                                        
-                                        
-                                    </div>
+        <>     
+            <br></br>
+            <br></br>
+            <div class="row row-cols-1 row-cols-md-3 g-4 my-5 ">
+                {
+                    productos.map(function(producto){
+                        return(
+                            <div class="col zoom" onClick={function(){pasarInformacion(producto)}} >
+                                <div class="card shadow h-100 p-2">
+                                    <img src={producto.foto} 
+                                        alt="foto" 
+                                        class="img-fluid sombra " 
+                                        onMouseOver={cambiarFoto}
+                                        onMouseLeave={cambiarFoto2}
+                                    />
+                                    <h2 class="fw-bold text-center ">{producto.nombre}</h2>
+                                    <p class="text-center fw-bold">{producto.descripción}</p>
+                                    
+                                    
+                                    
                                 </div>
-                            )
-                        })
-                    }
-                </div>                     
-            
-            </>
-        )
-    }
-
+                            </div>
+                        )
+                    })
+                }
+            </div>                     
+        
+        </>
+    )
 
 }

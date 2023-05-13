@@ -1,19 +1,20 @@
 .fondo{
-    background-color: sienna;
-    color: white;
+    background-color: rgb(248, 216, 11);
+    color: rgb(10, 10, 10);
+
 
     
     
 }
 
 .fondo2{
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/banner3.jpg?alt=media&token=45aa2c05-c3f6-4059-8dfc-0df953d30855");
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/storeskilimanjaro0.appspot.com/o/banner4.webp?alt=media&token=c266cafc-c55c-4930-bf77-50d75dac1842");
+   
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/banner2.png?alt=media&token=dbfaf813-87ba-49a8-ba11-f958c97337ae");
     background-position: top center;
     background-size: cover;
     padding: 25%;
     position: relative;
     z-index: 1;
-    color: white;
+    color: rgb(4, 4, 4);
     background-attachment: fixed;
 }

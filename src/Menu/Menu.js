@@ -18,12 +18,14 @@ export function Menu(){
                     <li class="nav-item">
                     <Link class="nav-link active" aria-current="page" to="/">Home</Link>
                     </li>
-                     
                     <li class="nav-item">
-                    <Link class="nav-link" to="/productos">Servicios</Link>
+                    <Link class="nav-link active " to="/productos">Servicios</Link>
                     </li>   
                     <li class="nav-item">
-                    <Link class="nav-link" to="/Desarrolladores">Acerca De</Link>
+                    <Link class="nav-link active"  to="/contacto">Contacto</Link>
+                    </li>  
+                    <li class="nav-item">
+                    <Link class="nav-link active" to="/Desarrolladores">Desarrolladores</Link>
                     </li>               
                 </ul>
                 </div>

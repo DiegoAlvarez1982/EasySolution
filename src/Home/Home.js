@@ -3,6 +3,7 @@ import { AcercaDe } from '../AcercaDe/AcercaDe'
 import { Servicios } from '../Servicios/Servicios'
 
 
+
 export function Home(){
     return(
         <>
@@ -13,8 +14,9 @@ export function Home(){
                 </div>
             </section>    
             <AcercaDe></AcercaDe>  
-            <Servicios></Servicios>
-           
+            <Servicios></Servicios>            
+            
+                    
         
         </>
     )

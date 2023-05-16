@@ -7,6 +7,7 @@ import { Desarrolladores} from "../Desarrolladores/Desarrolladores"
 
 
 
+
 export function Router(){
     return(
         <>
@@ -18,6 +19,7 @@ export function Router(){
             <Route path="/productos" element={<Tienda/>} />
             <Route path="/" element={<Home />} />
             <Route path="/desarrolladores" element={<Desarrolladores/>} />
+            
 
         </Routes>
 

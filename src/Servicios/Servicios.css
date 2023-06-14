@@ -1,20 +1,17 @@
 .fondo{
-    background-color: rgb(239, 232, 14);
-    color: rgb(10, 10, 10);
-
-
-    
+    background-color: rgb(255, 247, 14);
+    color: rgb(243, 235, 10);
     
 }
 
 .fondo2{
    
-    background-image: url("https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/banner2.png?alt=media&token=dbfaf813-87ba-49a8-ba11-f958c97337ae");
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/fotor01.png?alt=media&token=69fe6ea0-4d8c-4ff5-ad4e-7de341957d70");
     background-position: top center;
     background-size: cover;
     padding: 25%;
     position: relative;
     z-index: 1;
-    color: rgb(4, 4, 4);
+    color: rgb(238, 216, 15);
     background-attachment: fixed;
 }

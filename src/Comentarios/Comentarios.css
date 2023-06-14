@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 208, 208);
+}
+
+.conatiner{
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card{
+    height:350px;
+    width: 300px;
+    margin: 10px;
+    transition: 300ms;
+}
+
+.personaje_1, .personaje_2, .personaje_3{
+    height: 350px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #00a5ec;
+    transition: 300ms;
+    position: absolute;
+}
+
+.imagen_personaje_1{
+height: 350px;
+width:200px ;
+background-image: ulr('https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/marcela.jpg?alt=media&token=f54e6aba-455d-4f0a-aa82-cfcf79b31b34');
+background-size: cover;
+margin-bottom: 200px;
+transition: 300ms;
+filter: drop-shadow(5px 4px 10px #000);
+}
+
+.imagen_personaje_2{
+    height: 350px;
+    width:200px ;
+    background-image: ulr('https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/carlos.jpg?alt=media&token=618c6c2d-0f95-42d8-a3a8-1260f957440c');
+    background-size: cover;
+    margin-bottom: 200px;
+    transition: 300ms;
+    filter: drop-shadow(5px 4px 10px #000);
+    }
+
+
+.imagen_personaje_3{
+        height: 350px;
+        width:200px ;
+        background-image: ulr('https://firebasestorage.googleapis.com/v0/b/easysolution-4e923.appspot.com/o/sofia.jpg?alt=media&token=53269036-90b7-40fd-a7ed-93c0aba6dea5');
+        background-size: cover;
+        margin-bottom: 200px;
+        transition: 300ms;
+        filter: drop-shadow(5px 4px 10px #000);
+        }
+
+
+.detalle_1, .detalle_2, .detalle_3{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-top: 150px;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    transition: 300ms;
+
+}
+

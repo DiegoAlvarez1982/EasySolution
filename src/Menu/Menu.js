@@ -16,7 +16,7 @@ export function Menu(){
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <Link class="nav-link active" aria-current="page" to="/">Home</Link>
+                    <Link class="nav-link active" aria-current="page" to="/">Inicio</Link>
                     </li>
                     <li class="nav-item">
                     <Link class="nav-link active " to="/productos">Servicios</Link>
@@ -25,8 +25,11 @@ export function Menu(){
                     <Link class="nav-link active"  to="/contacto">Contacto</Link>
                     </li>  
                     <li class="nav-item">
-                    <Link class="nav-link active" to="/Desarrolladores">Desarrolladores</Link>
-                    </li>               
+                    <Link class="nav-link active" to="/Desarrolladores">Acerca De</Link>
+                    </li> 
+                    <li class="nav-item">
+                    <Link class="nav-link active"  to="/Registro">Registro</Link>
+                    </li>                
                 </ul>
                 </div>
             </div>
